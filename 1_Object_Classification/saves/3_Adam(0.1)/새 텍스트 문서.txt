@@ -1,0 +1,90 @@
+Microsoft Windows [Version 10.0.18363.1082]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+DGit_Project2020-2computer_vision cmd C cUsersWoo.condaenvs20-2_CVpython.exe cUsersWoo.vscodeextensionsms-python.python-2020.9.111407pythonFileslibpythondebugpylauncher 52034 -- dGit_Project2020-2computer_visionimage_classification.py 
+
+ load dataset ...
+
+ train start ...
+2020-09-27 173705.863703 I tensorflowcoreplatformcpu_feature_guard.cc142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-09-27 173705.886252 I tensorflowcompilerxlaserviceservice.cc168] XLA service 0x277d6779640 initialized for platform Host (this does not guarantee that XLA will be used). Devices
+2020-09-27 173705.901804 I tensorflowcompilerxlaserviceservice.cc176]   StreamExecutor device (0) Host, Default Version
+Model sequential
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_layer (Dense)          (None, 128)               100480
+_________________________________________________________________
+dropout (Dropout)            (None, 128)               0
+_________________________________________________________________
+dense_layer_2 (Dense)        (None, 128)               16512
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 128)               0
+_________________________________________________________________
+dense_layer_3 (Dense)        (None, 10)                1290
+=================================================================
+Total params 118,282
+Trainable params 118,282
+Non-trainable params 0
+_________________________________________________________________
+
+        batch size  32
+        epochs  20
+        optimizer  tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x00000277D985E088
+        learning rate  0.1
+
+Epoch 120
+22 - 0s - loss 65.1756 - accuracy 0.1333 - val_loss 121.4016 - val_accuracy 0.1000
+Epoch 220
+22 - 0s - loss 109.5497 - accuracy 0.0833 - val_loss 28.6107 - val_accuracy 0.1500
+Epoch 320
+22 - 0s - loss 24.9507 - accuracy 0.1667 - val_loss 4.0951 - val_accuracy 0.2750
+Epoch 420
+22 - 0s - loss 5.2239 - accuracy 0.2333 - val_loss 2.2341 - val_accuracy 0.2750
+Epoch 520
+22 - 0s - loss 2.9065 - accuracy 0.0833 - val_loss 2.2148 - val_accuracy 0.1000
+Epoch 620
+22 - 0s - loss 2.1027 - accuracy 0.1333 - val_loss 2.1614 - val_accuracy 0.1250
+Epoch 720
+22 - 0s - loss 2.1437 - accuracy 0.1667 - val_loss 2.2113 - val_accuracy 0.1250
+Epoch 820
+22 - 0s - loss 2.1809 - accuracy 0.1500 - val_loss 2.3242 - val_accuracy 0.1250
+Epoch 920
+22 - 0s - loss 2.2431 - accuracy 0.1333 - val_loss 2.3043 - val_accuracy 0.1250
+Epoch 1020
+22 - 0s - loss 2.0420 - accuracy 0.1833 - val_loss 2.2588 - val_accuracy 0.1750
+Epoch 1120
+22 - 0s - loss 2.0621 - accuracy 0.2167 - val_loss 2.2073 - val_accuracy 0.1750
+Epoch 1220
+22 - 0s - loss 2.2236 - accuracy 0.1500 - val_loss 2.1751 - val_accuracy 0.1750
+Epoch 1320
+22 - 0s - loss 2.0944 - accuracy 0.1667 - val_loss 2.1571 - val_accuracy 0.1750
+Epoch 1420
+22 - 0s - loss 2.0758 - accuracy 0.2000 - val_loss 2.1612 - val_accuracy 0.2000
+Epoch 1520
+22 - 0s - loss 2.0155 - accuracy 0.2167 - val_loss 2.1733 - val_accuracy 0.2000
+Epoch 1620
+22 - 0s - loss 2.0672 - accuracy 0.2333 - val_loss 2.1911 - val_accuracy 0.1750
+Epoch 1720
+22 - 0s - loss 2.0315 - accuracy 0.2167 - val_loss 2.2021 - val_accuracy 0.1750
+Epoch 1820
+22 - 0s - loss 2.0727 - accuracy 0.1667 - val_loss 2.2028 - val_accuracy 0.1750
+Epoch 1920
+22 - 0s - loss 2.1186 - accuracy 0.2333 - val_loss 2.1980 - val_accuracy 0.2000
+Epoch 2020
+22 - 0s - loss 2.0000 - accuracy 0.2500 - val_loss 2.2030 - val_accuracy 0.2000
+
+save model  savesmodel.h5
+
+test model
+313313 [==============================] - 0s 891usstep - loss 2.8898 - accuracy 0.1832
+44 [==============================] - 0s 749usstep - loss 2.0511 - accuracy 0.2400
+test dataset result   0.18320000171661377
+train dataset result   0.23999999463558197
+
+visualize results  savesresult.png
+
+DGit_Project2020-2computer_visionactivate 20-2_CV
+
+(20-2_CV) DGit_Project2020-2computer_vision

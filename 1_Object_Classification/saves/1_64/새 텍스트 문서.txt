@@ -1,0 +1,90 @@
+Microsoft Windows [Version 10.0.18363.1082]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\Git_Project\2020-2\computer_vision> cmd /C "c:\Users\Woo\.conda\envs\20-2_CV\python.exe c:\Users\Woo\.vscode\extensions\ms-python.python-2020.9.111407\pythonFiles\lib\python\debugpy\launcher 51909 -- d:\Git_Project\2020-2\computer_vision\image_classification.py "
+
+ load dataset ...
+
+ train start ...
+2020-09-27 17:30:31.625707: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-09-27 17:30:31.650936: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x1d32dd94e50 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-09-27 17:30:31.658830: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+dense_layer (Dense)          (None, 128)               100480
+_________________________________________________________________
+dropout (Dropout)            (None, 128)               0
+_________________________________________________________________
+dense_layer_2 (Dense)        (None, 128)               16512
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 128)               0
+_________________________________________________________________
+dense_layer_3 (Dense)        (None, 10)                1290
+=================================================================
+Total params: 118,282
+Trainable params: 118,282
+Non-trainable params: 0
+_________________________________________________________________
+*****************
+        batch size : 64
+        epochs : 20
+        optimizer : <tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x000001D330EFE208>
+        learning rate : 0.01
+*****************
+Epoch 1/20
+1/1 - 0s - loss: 2.4632 - accuracy: 0.1000 - val_loss: 2.4497 - val_accuracy: 0.2500
+Epoch 2/20
+1/1 - 0s - loss: 2.6630 - accuracy: 0.2833 - val_loss: 2.3063 - val_accuracy: 0.2000
+Epoch 3/20
+1/1 - 0s - loss: 2.1230 - accuracy: 0.3167 - val_loss: 1.9020 - val_accuracy: 0.4000
+Epoch 4/20
+1/1 - 0s - loss: 1.8676 - accuracy: 0.3500 - val_loss: 1.7601 - val_accuracy: 0.3250
+Epoch 5/20
+1/1 - 0s - loss: 1.8438 - accuracy: 0.4667 - val_loss: 1.5754 - val_accuracy: 0.3500
+Epoch 6/20
+1/1 - 0s - loss: 1.6520 - accuracy: 0.5000 - val_loss: 1.4294 - val_accuracy: 0.5250
+Epoch 7/20
+1/1 - 0s - loss: 1.7479 - accuracy: 0.4500 - val_loss: 1.2433 - val_accuracy: 0.6250
+Epoch 8/20
+1/1 - 0s - loss: 1.1902 - accuracy: 0.5500 - val_loss: 1.2886 - val_accuracy: 0.4500
+Epoch 9/20
+1/1 - 0s - loss: 1.3463 - accuracy: 0.4833 - val_loss: 1.2761 - val_accuracy: 0.4500
+Epoch 10/20
+1/1 - 0s - loss: 0.9625 - accuracy: 0.6833 - val_loss: 1.3219 - val_accuracy: 0.4250
+Epoch 11/20
+1/1 - 0s - loss: 1.1673 - accuracy: 0.6333 - val_loss: 1.2700 - val_accuracy: 0.4250
+Epoch 12/20
+1/1 - 0s - loss: 0.8732 - accuracy: 0.6667 - val_loss: 1.1445 - val_accuracy: 0.5000
+Epoch 13/20
+1/1 - 0s - loss: 0.9605 - accuracy: 0.6500 - val_loss: 0.9925 - val_accuracy: 0.4750
+Epoch 14/20
+1/1 - 0s - loss: 0.9267 - accuracy: 0.6833 - val_loss: 0.8738 - val_accuracy: 0.6750
+Epoch 15/20
+1/1 - 0s - loss: 0.6280 - accuracy: 0.7667 - val_loss: 0.8104 - val_accuracy: 0.7250
+Epoch 16/20
+1/1 - 0s - loss: 0.7232 - accuracy: 0.7500 - val_loss: 0.8118 - val_accuracy: 0.7000
+Epoch 17/20
+1/1 - 0s - loss: 0.6198 - accuracy: 0.8500 - val_loss: 0.8115 - val_accuracy: 0.7250
+Epoch 18/20
+1/1 - 0s - loss: 0.6339 - accuracy: 0.7500 - val_loss: 0.8252 - val_accuracy: 0.7000
+Epoch 19/20
+1/1 - 0s - loss: 0.5552 - accuracy: 0.8167 - val_loss: 0.7946 - val_accuracy: 0.7000
+Epoch 20/20
+1/1 - 0s - loss: 0.4452 - accuracy: 0.8333 - val_loss: 0.7630 - val_accuracy: 0.7500
+
+save model : "saves/model.h5"
+
+test model
+313/313 [==============================] - 0s 946us/step - loss: 1.0897 - accuracy: 0.6082
+4/4 [==============================] - 0s 1000us/step - loss: 0.5041 - accuracy: 0.8100
+test dataset result :  0.6082000136375427
+train dataset result :  0.8100000023841858
+
+visualize results : "saves/result.png"
+
+D:\Git_Project\2020-2\computer_vision>activate 20-2_CV
+
+(20-2_CV) D:\Git_Project\2020-2\computer_vision>
