@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+
+data.zip
+
+data/*
+!data/.keep
+
+logs/*
+!logs/.keep
+
+save_model/*
+!save_model/.keep
