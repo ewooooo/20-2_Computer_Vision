@@ -11,3 +11,5 @@ logs/*
 
 save_model/*
 !save_model/.keep
+
+final_output.txt
