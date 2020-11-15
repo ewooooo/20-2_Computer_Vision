@@ -8,7 +8,9 @@ import json
 import pandas as pd
 import random
 from datasetProcessing import DataTest
-from model_train import vedio2text
+#from model_train_gre import vedio2text
+#from model_train_Red_bi_LSTM import vedio2text
+from model_train_gre_bi_LSTM import vedio2text
 # 실험에 사용할 모델이 model_train에 있는지 한번 확인
 
 '''
