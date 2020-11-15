@@ -9,6 +9,8 @@ import pandas as pd
 import random
 from datasetProcessing import DataTrain
 from datasetProcessing import DataVal
+
+tf.debugging.set_log_device_placement(True)
 '''
 주석 상, [1], [2]는 각 과제를 수행할 때 필수적으로 수정해야 하는 부분을 나타냈습니다.
 환경 설치 상 문의 사항: yellowjs0304@gmail.com
@@ -33,10 +35,11 @@ batch_size를 줄이거나, 모델 구조의 파라미터(ex. 유닛수)를 줄�
 load_saver = False
 test_mode = False
 learning_rate = 0.001
-num_epoches = 100 #전체 Epoch 횟수
-batch_size = 256 # Batch Size 조절
+num_epoches = 30 #전체 Epoch 횟수
+batch_size = 512 # Batch Size 조절
 num_display_steps = 15 # 몇 Epoch마다 결과 창을 보여줄지
 num_saver_epoches = 5 # 모델을 몇 Epoch마다 저장할지
+
 '''
 - save_dir : 학습 모델이 저장될 경로
 - log_dir : log(Tensorboard) 파일이 저장될 경로
