@@ -9,3 +9,5 @@
 3. Fashion MNIST 영상 생성(Image Generation) _ GAN, cGAN, DCGAN
 
 4. 비디오 캡션 생성(Video Captioning) _ LSTM, biLSTM, Attention 기법
+
+5. 모바일 경량 모델 과제 _ Tensorflow-lite, tensorflowjs
